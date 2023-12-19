@@ -1,0 +1,72 @@
+.main {
+    /* background-color: lightblue; */
+    width: 600px;
+    height: 500px;
+    margin-left: 33%;
+    margin-top: 50px;
+    border-radius: 20px;
+
+}
+
+.heading__style {
+
+    margin-left: 36%;
+    background-color: antiquewhite;
+    border-radius: 20PX;
+    width: 175px;
+    margin-top: 10px;
+    text-decoration: double underline;
+}
+
+.inputType {
+    margin-left: 25%;
+
+
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    border-bottom: 2px solid;
+    border: transparent;
+    border-radius: 50px;
+    background-color: lightblue;
+}
+
+button {
+    height: 35px;
+    border-radius: 20%;
+    border: transparent;
+
+}
+
+.deleteIcon {
+    margin-left: 300px;
+    margin-top: -58px;
+}
+
+h5 {
+    background-color: skyblue;
+    border-radius: 4px;
+}
+
+.output {
+    margin: 10px 100px 0px -20px;
+    line-height: 0.3rem;
+
+}
+
+.editItem {
+    margin-left: 270px;
+    margin-top: -50px;
+}
+.checkbox{
+    height: 15px;
+    width:15px;
+    margin-left:-20px;
+    text-decoration: line-through;
+  
+}
+.input .type{
+    margin-top:-15px;
+}
