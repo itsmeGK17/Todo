@@ -47,17 +47,17 @@ const Todo = (props) => {
 
     }, [item])
 
-    const handleCheckbox = (val) => {
-        let checkItem = item.map((elem, index) => {
-            if (index === val) {
-                return { ...elem, completed: !elem.completed }
-            } else {
-                return elem;
-            }
+    // const handleCheckbox = (val) => {
+    //     let checkItem = item.map((elem, index) => {
+    //         if (index === val) {
+    //             return { ...elem, completed: !elem.completed }
+    //         } else {
+    //             return elem;
+    //         }
 
-        })
-        setItem(checkItem)
-    }
+    //     })
+    //     setItem(checkItem)
+    // }
 
     return (
         <div className='main'>
@@ -79,16 +79,16 @@ const Todo = (props) => {
                     item?.map((elem, index) => {
                         return (
                             <div className='output'>
-                                <input
+                                {/* <input
                                     className='checkbox'
                                     type='checkbox'
                                     ckecked={elem.completed}
                                     onChange={() => handleCheckbox(index)}
-
-                                    />
+                                    style={{ textDecoration: elem.completed ? "line-through" : null }}
+                                    /> */}
                                 <h5
-                                    key={elem.id}> <span  style={{ textDecoration: elem.completed ? "line-through" : null }}> {elem}</span>
-                                   </h5>
+                                    key={elem.id}>{elem}
+                                </h5>
                                 <span> <EditNoteOutlinedIcon onClick={() => EditItem(elem)} className='editItem' /> </span>
                                 <span> <DeleteIcon onClick={() => deleteItem(index)} className='deleteIcon' /> </span>
                             </div>
